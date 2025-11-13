@@ -1,0 +1,90 @@
+/* =======================================
+   frontend-app/src/Login.css
+   Estilos para o componente Login.jsx
+   ======================================= */
+
+/* Estilos globais para a tela de login */
+.login-container {
+    /* Centraliza o formulário na tela */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ocupa toda a altura da tela */
+    background-color: #f0f2f5; /* Fundo cinza claro */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+}
+
+/* Estilo do container do formulário */
+.login-form {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 100%;
+    max-width: 400px; /* Largura máxima para desktop */
+    text-align: center;
+}
+
+.login-form h2 {
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+/* Estilo dos campos de entrada (input) */
+.login-form input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box; 
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+.login-form input:focus {
+    border-color: #007bff; /* Cor primária ao focar */
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+/* Estilo do botão de submissão */
+.login-form button {
+    width: 100%;
+    padding: 14px;
+    background-color: #007bff; /* Azul primário */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.login-form button:hover:not(:disabled) {
+    background-color: #0056b3;
+    transform: translateY(-1px); /* Efeito leve de levantamento */
+}
+
+/* Estilo para quando o botão estiver desativado (loading) */
+.login-form button:disabled {
+    background-color: #9cbce2;
+    cursor: not-allowed;
+    opacity: 0.8;
+}
+
+/* Estilo da mensagem de erro */
+.error-message {
+    color: #dc3545; /* Cor vermelha para erros */
+    margin-top: 15px;
+    font-size: 0.9em;
+    padding: 10px;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+}
